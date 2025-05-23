@@ -20,17 +20,16 @@ namespace ConsoleApp22
 
         static void Main(string[] args)
         {
-            MyClass classInstance = new MyClass();
-            classInstance.change = "не изменено";
+            //Создаем экземпляр Класса и Структуры
+            MyClass myClass = new MyClass();
+            //Инициализируем поля 
+            class.change = "не изменено";
 
-            MyStruct structInstance = new MyStruct();
-            structInstance.change = "не изменено";
+            MyStruct mystruct = new MyStruct();
+            struct.change = "не изменено";
 
-            ClassTaker(classInstance);
-            StructTaker(structInstance);
-
-            Console.WriteLine("Класс после передачи в метод: " + classInstance.change);
-            Console.WriteLine("Структура после передачи в метод: " + structInstance.change);
+            Console.WriteLine("Класс после передачи в метод: " + class.change);
+            Console.WriteLine("Структура после передачи в метод: " + struct.change);
 
             Console.ReadKey();
         }
