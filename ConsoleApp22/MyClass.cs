@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp22
 {
+    ///Класс с открытым полем change
     class MyClass
     {
             public string change;
