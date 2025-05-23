@@ -28,6 +28,16 @@ namespace ConsoleApp22
             MyStruct mystruct = new MyStruct();
             struct.change = "не изменено";
 
+            static void StructTaker(MyStruct myStruct)
+            {
+                 myClass.change = "изменено";
+            }
+             static void StructTaker(MyStruct myStruct)
+             {
+                 class.change = "не изменено
+             }
+            
+
             Console.WriteLine("Класс после передачи в метод: " + class.change);
             Console.WriteLine("Структура после передачи в метод: " + struct.change);
 
